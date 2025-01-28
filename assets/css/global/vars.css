@@ -36,7 +36,7 @@
 
     --color-primary: var(--ghost-accent-color, #3eb0ef);
 
-    --ui-background: var(--gray-01); /* Default page background */
+    --ui-background: #f8f5d7; /* Default page background */
     --interactive-01: var(--red-06); /* Default interactive color */
     --ui-01: var(--gray-02); /* Container background on --ui-background */
     --ui-02: var(--ui-background); /* Container background on --ui-01 */
@@ -52,7 +52,7 @@
     --inverse-01: var(--white); /* inverse text & icon color */
     --inverse-02: var(--gray-08); /* High contrast background; high contrast elements */
 
-    --link: var(--red-06); /* Primary links */
+    --link: #1F1D1A; /* Primary links */
 
     --icon-01: var(--gray-10); /* Primary icons */
     --icon-02: var(--gray-07); /* Secondary icons */
