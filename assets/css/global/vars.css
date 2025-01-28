@@ -36,7 +36,7 @@
 
     --color-primary: var(--ghost-accent-color, #3eb0ef);
 
-    --ui-background: #f8f5d7; /* Default page background */
+    --ui-background: #F8F5D7; /* Default page background */
     --interactive-01: var(--red-06); /* Default interactive color */
     --ui-01: var(--gray-02); /* Container background on --ui-background */
     --ui-02: var(--ui-background); /* Container background on --ui-01 */
@@ -44,11 +44,11 @@
     --ui-04: var(--gray-05); /* Medium contrast border */
     --ui-05: var(--gray-10); /* High contrast border; emphasis elements */
 
-    --text-01: #1f1d1a; /* Primary text, body copy, headers, hover text color for text-02 */
+    --text-01: #1F1D1A; /* Primary text, body copy, headers, hover text color for text-02 */
     --text-02: #4b4a47; /* Secondary text, input labels */
     --text-03: var(--gray-04); /* Placeholder text */
     --text-04: var(--white); /* Text on interactive colors */
-    --text-05: var(--gray-06); /* Tertiary text, help text */
+    --text-05: #85847F; /* Tertiary text, help text */
     --inverse-01: var(--white); /* inverse text & icon color */
     --inverse-02: var(--gray-08); /* High contrast background; high contrast elements */
 
