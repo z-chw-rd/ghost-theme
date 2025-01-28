@@ -44,8 +44,8 @@
     --ui-04: var(--gray-05); /* Medium contrast border */
     --ui-05: var(--gray-10); /* High contrast border; emphasis elements */
 
-    --text-01: var(--gray-10); /* Primary text, body copy, headers, hover text color for text-02 */
-    --text-02: var(--gray-09); /* Secondary text, input labels */
+    --text-01: #1f1d1a; /* Primary text, body copy, headers, hover text color for text-02 */
+    --text-02: #4b4a47; /* Secondary text, input labels */
     --text-03: var(--gray-04); /* Placeholder text */
     --text-04: var(--white); /* Text on interactive colors */
     --text-05: var(--gray-06); /* Tertiary text, help text */

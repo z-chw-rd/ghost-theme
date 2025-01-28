@@ -1,11 +1,14 @@
 .component-header {
     display: flex;
-    padding-top: var(--pad-xxxl);
+    margin-top: var(--pad-xxxl);
+    padding-top: var(--pad-xxs);
+    padding-bottom: var(--pad-xs);
     flex-direction: column;
     gap: var(--gap-m);
+    border-top: 1px solid var(--ui-04);
 }
 
-.component-header-hr {
-    background-color: var(--ui-03);
-    height: 1px;
+.component-header h2 {
+    font: var(--h6);
+    color: var(--text-02);
 }

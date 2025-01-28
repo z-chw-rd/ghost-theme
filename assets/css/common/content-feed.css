@@ -15,6 +15,10 @@
     gap: var(--gap-xs);
 }
 
+.gh-content-feed-item-row:first-of-type {
+    padding-top: var(--pad-s);
+}
+
 .gh-content-feed-item-date-row {
     font: var(--body-sans);
     white-space: nowrap;

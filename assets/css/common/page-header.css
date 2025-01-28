@@ -10,3 +10,7 @@
     flex-direction: column;
     gap: var(--gap-l);
 }
+
+.gh-page-header-intro p {
+    color: var(--text-02);
+}

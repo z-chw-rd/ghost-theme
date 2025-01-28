@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: SilvanaText-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/SilvanaText-Regular.woff') format('woff'), url('/assets/fonts/SilvanaText-Regular.woff2') format('woff2');
+}
+
+@font-face {
     font-family: Silvana-Bold;
     font-style: normal;
     font-weight: 700;
@@ -20,10 +27,17 @@
 }
 
 @font-face {
-    font-family: Surt-Normal-Regular-Italic;
-    font-style: italic;
-    font-weight: 400;
-    src: local(""), url('/assets/fonts/Surt-Normal-Regular-Italic.woff') format('woff'), url('/assets/fonts/Surt-Normal-Regular-Italic.woff2') format('woff2');
+    font-family: Surt-Normal-Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url('/assets/fonts/Surt-Normal-Medium.woff') format('woff'), url('/assets/fonts/Surt-Normal-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-Semibold;
+    font-style: normal;
+    font-weight: 600;
+    src: local(""), url('/assets/fonts/Surt-Normal-Semibold.woff') format('woff'), url('/assets/fonts/Surt-Normal-Semibold.woff2') format('woff2');
 }
 
 @font-face {
@@ -31,6 +45,20 @@
     font-style: normal;
     font-weight: 700;
     src: local(""), url('/assets/fonts/Surt-Normal-Bold.woff') format('woff'), url('/assets/fonts/Surt-Normal-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-UltraBold;
+    font-style: normal;
+    font-weight: 800;
+    src: local(""), url('/assets/fonts/Surt-Normal-Ultrabold.woff') format('woff'), url('/assets/fonts/Surt-Normal-UltraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-Regular-Italic;
+    font-style: italic;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/Surt-Normal-Regular-Italic.woff') format('woff'), url('/assets/fonts/Surt-Normal-Regular-Italic.woff2') format('woff2');
 }
 
 @font-face {
