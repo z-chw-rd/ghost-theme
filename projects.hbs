@@ -1,0 +1,25 @@
+{{!< default}}
+<section class="gh-grid">
+
+        <header class="gh-page-header">
+            <div class="gh-page-header-intro">
+                <h1>Projects</h1>
+                <p class="body-l">Stuff I made</p>
+            </div>
+        </header>
+
+        <div class="gh-content-feed-vstack">
+            {{#foreach posts}}
+
+                {{> "content-feed-item-vstack" page=../pagination.page }} {{!-- partials/content-feed-item-tag.hbs --}}
+
+            {{/foreach}}
+        </div>
+
+        {{!-- If JS isn't enabled, fallback to standard pagination --}}
+        <noscript>
+            <div class="gh-pagination">
+                {{pagination}}
+            </div>
+        </noscript>
+</section>

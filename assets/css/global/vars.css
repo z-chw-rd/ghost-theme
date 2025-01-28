@@ -1,0 +1,99 @@
+:root {
+
+    /* Primitives -------------------------- */
+
+    /* Colors ------------------ */
+
+    /* Basic */
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Grays */
+    --gray-01: #fafafa;
+    --gray-02: #f3f3f3;
+    --gray-03: #e6e6e6;
+    --gray-04: #ababab;
+    --gray-05: #919191;
+    --gray-06: #787878;
+    --gray-07: #5e5e5e;
+    --gray-08: #454545;
+    --gray-09: #363636;
+    --gray-10: #121212;
+
+    /* Reds */
+    --red-05: #EE0E16;
+    --red-06: #C90C12;
+
+    /* Blues */
+    --blue-05: #0000D2;
+
+    /* Greens */
+    --green-06: #198038;
+
+    /* Semantic ---------------------------- */
+
+    /* Colors */
+
+    --color-primary: var(--ghost-accent-color, #3eb0ef);
+
+    --ui-background: var(--gray-01); /* Default page background */
+    --interactive-01: var(--red-06); /* Default interactive color */
+    --ui-01: var(--gray-02); /* Container background on --ui-background */
+    --ui-02: var(--ui-background); /* Container background on --ui-01 */
+    --ui-03: var(--gray-03); /* Subtle border; tertiary background */
+    --ui-04: var(--gray-05); /* Medium contrast border */
+    --ui-05: var(--gray-10); /* High contrast border; emphasis elements */
+
+    --text-01: var(--gray-10); /* Primary text, body copy, headers, hover text color for text-02 */
+    --text-02: var(--gray-09); /* Secondary text, input labels */
+    --text-03: var(--gray-04); /* Placeholder text */
+    --text-04: var(--white); /* Text on interactive colors */
+    --text-05: var(--gray-06); /* Tertiary text, help text */
+    --inverse-01: var(--white); /* inverse text & icon color */
+    --inverse-02: var(--gray-08); /* High contrast background; high contrast elements */
+
+    --link: var(--red-06); /* Primary links */
+
+    --icon-01: var(--gray-10); /* Primary icons */
+    --icon-02: var(--gray-07); /* Secondary icons */
+    --icon-03: var(--white); /* Icons on interactive colors */
+
+    --field-01: var(--gray-02); /* Default input fields; field color on --ui-background */
+
+    --success: var(--green-06); /* Success */
+
+    /* Sizes */
+    /* ------------------------------------- */
+
+    --height: 4rem;
+
+    /* Gap */
+
+    --gap-xxs: .25rem;
+    --gap-xs: .5rem;
+    --gap-s: .75rem;
+    --gap-m: 1rem;
+    --gap-l: 1.5rem;
+    --gap-xl: 2rem;
+    --gap-xxl: 4rem;
+
+    /* Padding */
+
+    --pad-xxs: .375rem;
+    --pad-xs: .5rem;
+    --pad-s: 1rem;
+    --pad-m: 2rem;
+    --pad-l: 2.5rem;
+    --pad-xl: 3rem;
+    --pad-xxl: 4rem;
+    --pad-xxxl: 5rem;
+    --pad-xxxxl: 7rem;
+
+    /* Article spacing */
+    --post-gap-xxs: 1.25rem;
+    --post-gap-xs: 1.5rem;
+    --post-gap-s: 1.875rem;
+    --post-gap-m: 2rem;
+    --post-gap-l: 2.5rem;
+    --post-gap-xl: 4.5rem;
+}

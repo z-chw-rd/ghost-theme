@@ -1,0 +1,27 @@
+{{!< default}}
+<section class="gh-grid">
+
+        <header class="gh-page-header">
+            <div class="gh-page-header-intro">
+                <h1>Zach Ward</h1>
+                <p class="body-l">A collection of my thoughts and an archive of my work. This is my digital footprint.</p>
+            </div>
+            <a href="#/portal/">Get updates</a>
+        </header>
+
+        <header class="component-header">
+            <h4>Feed</h4>
+            <hr class="component-header-hr">
+        </header>
+
+        <div class="gh-content-feed-rows">
+            {{#get "posts" limit="9" order="published_at desc"}}
+                {{#foreach posts}}
+
+                    {{> "content-feed-item-row" }} {{!-- partials/content-feed-item.hbs --}}
+
+                {{/foreach}}
+            {{/get}}
+        </div>
+
+</section>

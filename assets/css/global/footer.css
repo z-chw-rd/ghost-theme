@@ -1,0 +1,40 @@
+.gh-footer {
+    background: inherit;
+    padding-top: var(--pad-xxl);
+    padding-bottom: var(--pad-xxxl);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.gh-footer-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 900px) {
+    .gh-footer-inner {
+        padding: 0 4vmin;
+    }
+}
+
+.gh-footer-menu {
+    border-top: 1px solid var(--ui-03);
+    padding-top: var(--pad-xxl);
+}
+
+.gh-footer-menu .nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: var(--gap-xl);
+}
+
+.gh-footer-copyright {
+    font: 400 .75rem/150% Surt-Normal-Regular;
+    color: var(--text-05);
+    padding-top: var(--pad-xl);
+}

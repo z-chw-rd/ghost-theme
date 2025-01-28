@@ -1,0 +1,18 @@
+<article class="gh-content-feed-item-vstack {{post_class}}">
+    <time class="gh-content-feed-item-date-vstack" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="MMM DD YYYY"}}
+    </time>
+
+    <a class="gh-content-feed-item-title-vstack" href="{{url}}">{{title}}</a>
+
+    {{#if tags}}
+    <ul class="gh-content-feed-item-tags-vstack">
+        {{#foreach tags}}
+        <li>
+            <a href="{{url}}" class="gh-content-feed-item-tag-vstack">{{name}}</a>
+        </li>
+        {{/foreach}}
+    </ul>
+    {{/if}}
+
+</article>

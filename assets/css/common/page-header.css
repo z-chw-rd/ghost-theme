@@ -1,0 +1,12 @@
+.gh-page-header {
+    display: flex;
+    padding-top: var(--pad-xxxxl);
+    flex-direction: column;
+    gap: var(--gap-m);
+}
+
+.gh-page-header-intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-l);
+}

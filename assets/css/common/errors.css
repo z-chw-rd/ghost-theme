@@ -1,0 +1,44 @@
+/* Error Templates
+/* ---------------------------------------------------------- */
+
+.gh-error {
+    justify-content: center;
+    padding-bottom: 2vmin;
+    height: 100vh;
+}
+
+.gh-error-content {
+    grid-column: full-start / full-end;
+    text-align: center;
+    align-self: center
+}
+
+.gh-error-description {
+    font: var(--h3);
+    color: var(--text-05);
+}
+
+.gh-error-link {
+    display: block;
+    margin-top: 4vmin;
+}
+
+.gh-error-stack {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.gh-error-stack-list {
+    margin: 4vmin 0 0;
+}
+
+.gh-error-stack-list > li {
+    padding: 2rem 0;
+    margin: 0;
+    border-top: rgba(0,0,0,0.1) 1px solid;
+}
+
+.gh-error-stack-function {
+    margin: 0 0 0.5em;
+    color: var(--interactive-01);
+}

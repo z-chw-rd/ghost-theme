@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Obert-Slant;
+    font-style: italic;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/Obert-Slant-90.woff') format('woff'), url('/assets/fonts/Obert-Slant-90.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Silvana-Bold;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url('/assets/fonts/Silvana-Bold.woff') format('woff'), url('/assets/fonts/Silvana-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/Surt-Normal-Regular.woff') format('woff'), url('/assets/fonts/Surt-Normal-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-Regular-Italic;
+    font-style: italic;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/Surt-Normal-Regular-Italic.woff') format('woff'), url('/assets/fonts/Surt-Normal-Regular-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Normal-Bold;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url('/assets/fonts/Surt-Normal-Bold.woff') format('woff'), url('/assets/fonts/Surt-Normal-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Surt-Expanded-Medium;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/Surt-Expanded-Medium.woff') format('woff'), url('/assets/fonts/Surt-Expanded-Medium.woff2') format('woff2');
+}

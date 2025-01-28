@@ -1,0 +1,240 @@
+/* Global Header
+/* ---------------------------------------------------------- */
+
+.gh-head {
+    background: inherit;
+    padding-top: var(--pad-l);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.gh-head-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Logo / Branding */
+/* ---------------------------------------------------------- */
+
+.gh-head-brand {
+    place-self: center start;
+}
+
+.gh-head-logo {
+    font: 400 2rem/100% Obert-Slant, var(--font-serif);
+    color: var(--text-01);
+}
+
+/* Nav Links */
+/* ---------------------------------------------------------- */
+
+.gh-head-menu {
+    place-self: center end;
+}
+
+.gh-head-menu .nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: var(--gap-l);
+}
+
+.nav a {
+    color: var(--text-01);
+}
+
+/* Secondary Navigation
+/* ---------------------------------------------------------- */
+
+.gh-head-actions-list a:not([class]) {
+    display: inline-block;
+    margin: 0 0 0 1.5vmin;
+    padding: 5px 0;
+}
+
+
+/* Mobile Menu Trigger
+/* ---------------------------------------------------------- */
+
+.gh-burger {
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+.gh-burger-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+}
+
+.gh-burger-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.gh-burger-box,
+.gh-burger-inner {
+    color: var(--text-01);
+}
+
+.gh-burger-box::before {
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: currentcolor;
+    transition: transform 300ms cubic-bezier(.2,.6,.3,1), width 300ms cubic-bezier(.2,.6,.3,1);
+    will-change: transform, width;
+}
+
+.gh-burger-inner::before,
+.gh-burger-inner::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: currentcolor;
+    transition: transform 250ms cubic-bezier(.2,.7,.3,1), width 250ms cubic-bezier(.2,.7,.3,1);
+    will-change: transform, width;
+}
+
+.gh-burger-inner::before {
+    transform: translatey(-6px);
+}
+.gh-burger-inner::after {
+    transform: translatey(6px);
+}
+
+body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::before {
+    transform: translatey(-8px);
+}
+body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
+    transform: translatey(8px);
+}
+
+.gh-head-open .gh-burger-box::before {
+    width: 0;
+    transform: translatex(19px);
+    transition: transform 200ms cubic-bezier(.2,.7,.3,1), width 200ms cubic-bezier(.2,.7,.3,1);
+}
+
+.gh-head-open .gh-burger-inner::before {
+    width: 26px;
+    transform: translatex(6px) rotate(135deg);
+}
+
+.gh-head-open .gh-burger-inner::after {
+    width: 26px;
+    transform: translatex(6px) rotate(-135deg);
+}
+
+/* Mobile Menu
+/* ---------------------------------------------------------- */
+/* IDs needed to ensure sufficient specificity */
+
+@media (max-width: 900px) {
+    .gh-burger {
+        display: inline-block;
+    }
+    #gh-head {
+        transition: all 0.4s ease-out;
+        overflow: hidden;
+    }
+    #gh-head .gh-head-inner {
+        height: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 4vmin;
+    }
+    #gh-head .gh-head-brand {
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        grid-column-start: 1;
+        max-width: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+    }
+
+    #gh-head .gh-head-menu {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        margin: 0 auto 10vh auto;
+        font: var(--body-sans-bold);
+    }
+    #gh-head .gh-head-menu .nav li {
+        margin: 5px 0;
+    }
+    #gh-head .gh-head-menu .nav a {
+        padding: 8px 0;
+    }
+    #gh-head .gh-head-menu .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #gh-head .gh-head-actions {
+        padding: 20px 0;
+        justify-content: center;
+        text-align: left;
+    }
+    #gh-head .gh-head-actions a {
+        margin: 0 10px;
+    }
+    /* Hide collapsed content */
+    #gh-head .gh-head-actions,
+    #gh-head .gh-head-menu {
+        display: none;
+    }
+    /* Open the menu */
+    .gh-head-open {
+        overflow: hidden;
+        height: 100vh;
+    }
+    .gh-head-open #gh-head {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 900;
+        overflow-y: scroll;
+    }
+    .gh-head-open #gh-head .gh-head-inner {
+        grid-template-rows: auto 1fr auto;
+    }
+    .gh-head-open #gh-head .gh-head-actions,
+    .gh-head-open #gh-head .gh-head-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    #gh-head .gh-head-menu {
+        font-size: 6vmin;
+    }
+}

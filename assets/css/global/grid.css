@@ -1,0 +1,19 @@
+.gh-grid,
+.gh-canvas,
+.gh-post-header,
+.kg-width-full.kg-content-wide {
+
+    --main: 600px;
+    --wide: 120px;
+    --full: 80px;
+    --max-width: 800px;
+
+    display: grid;
+    grid-template-columns: [left-edge main-start wide-start full-start] min(var(--main), 100%) [main-end] minmax(0, var(--wide)) [wide-end] minmax(0, var(--full)) [full-end right-edge];
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.gh-grid > * {
+    grid-column: main-start / main-end;
+}

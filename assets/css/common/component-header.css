@@ -1,0 +1,11 @@
+.component-header {
+    display: flex;
+    padding-top: var(--pad-xxxl);
+    flex-direction: column;
+    gap: var(--gap-m);
+}
+
+.component-header-hr {
+    background-color: var(--ui-03);
+    height: 1px;
+}
