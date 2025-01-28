@@ -28,6 +28,7 @@
 
 .gh-head-logo {
     font: 400 2rem/100% Obert-Slant, var(--font-serif);
+    font-style: italic;
     color: var(--text-01);
 }
 
