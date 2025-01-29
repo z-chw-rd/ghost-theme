@@ -9,6 +9,6 @@
 }
 
 .component-header h2 {
-    font: var(--h6);
+    font: 600 1.5rem/120% Surt-Normal-Semibold;
     color: var(--text-02);
 }
