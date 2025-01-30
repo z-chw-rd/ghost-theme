@@ -114,6 +114,7 @@
     margin-top: var(--post-gap-l) !important;
 }
 
+.gh-canvas .kg-card:first-of-type,
 .gh-canvas p:first-of-type {
     margin-top: var(--post-gap-m);
 }
