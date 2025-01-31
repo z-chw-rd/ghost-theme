@@ -67,3 +67,10 @@
     font-weight: 400;
     src: local(""), url('/assets/fonts/Surt-Expanded-Medium.woff') format('woff'), url('/assets/fonts/Surt-Expanded-Medium.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: iAWriterMonoS-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url('/assets/fonts/iAWriterMonoS-Regular.woff') format('woff'), url('/assets/fonts/iAWriterMonoS-Regular.woff2') format('woff2');
+}
