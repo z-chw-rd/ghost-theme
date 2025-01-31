@@ -91,6 +91,7 @@
     margin-top: var(--post-gap-xs);
 }
 
+.gh-feature-image,
 .gh-content [id] + .kg-card,
 .gh-content blockquote + .kg-card {
     margin-top: var(--post-gap-l);
