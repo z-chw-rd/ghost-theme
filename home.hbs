@@ -14,7 +14,7 @@
         </header>
 
         <div class="gh-content-feed-rows">
-            {{#get "posts" limit="9" order="published_at desc"}}
+            {{#get "posts" limit="9" order="published_at desc" include="tags"}}
                 {{#foreach posts}}
 
                     {{> "content-feed-item-row" }} {{!-- partials/content-feed-item.hbs --}}

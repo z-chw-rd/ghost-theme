@@ -1,4 +1,11 @@
 <article class="gh-content-feed-item-row {{post_class}}">
+
+    {{#if tags}}
+        {{#foreach tags}}
+            <a href="{{url}}" class="gh-content-feed-item-tag-vstack">{{name}}</a>
+        {{/foreach}}
+    {{/if}}
+
     <a class="gh-content-feed-item-title-row" href="{{url}}">{{title}}</a>
 
     <time class="gh-content-feed-item-date-row" datetime="{{date format="YYYY-MM-DD"}}">
