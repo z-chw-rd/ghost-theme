@@ -52,18 +52,6 @@
     font: var(--body)
 }
 
-.gh-post-authors {
-    font: var(--body-sans);
-    font-size: .875rem;
-    color: var(--text-02);
-}
-
-.gh-post-authors a {
-    color: var(--text-01);
-    font: var(--body-sans-bold);
-    font-size: .875rem;
-}
-
 /* Element Margin & Padding  */
 /* --------------------------------------------------------- */
 
@@ -95,10 +83,6 @@
 .gh-content [id] + .kg-card,
 .gh-content blockquote + .kg-card {
     margin-top: var(--post-gap-l);
-}
-
-.gh-post-footer {
-    margin: var(--post-gap-xxs) auto;
 }
 
 .gh-content > ul,
@@ -254,4 +238,37 @@ code {
 
 .gh-content tbody tr:last-child {
     border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+/* Post Footer */
+
+.gh-post-footer {
+    margin: var(--post-gap-xxs) auto;
+    font: var(--body-weight) .875rem/var(--lineheight-04) var(--body-sans);
+}
+
+.gh-post-footer,
+.gh-post-authors,
+.gh-post-tags {
+    font: var(--body-sans);
+    color: var(--text-02);
+    font-size: .875rem;
+}
+
+/* Authors */
+
+.gh-post-authors a,
+.gh-post-tags a {
+    color: var(--text-01);
+    font: var(--body-sans-bold);
+    font-size: .875rem;
+}
+
+/* Tags */
+
+.gh-post-tags {
+    width: 100%;
+    padding-top: var(--post-gap-xxs);
+    margin: var(--post-gap-xxs) 0 var(--post-gap-xs) 0;
+    border-top: 1px solid var(--text-05);
 }

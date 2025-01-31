@@ -66,6 +66,12 @@
                 Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
             </div>
 
+            {{#if tags}}
+                <aside class="gh-post-tags">
+                    See more posts about: {{tags}}
+                </aside>
+            {{/if}}
+
             {{#if comments}}
                 <section class="gh-post-comments">
                     {{comments}}
