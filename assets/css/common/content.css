@@ -213,7 +213,8 @@ code {
 }
 
 .kg-image-card img {
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Tables
