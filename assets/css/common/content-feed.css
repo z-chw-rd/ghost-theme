@@ -1,4 +1,4 @@
-/* Row (No Tag) */
+/* Row */
 
 .gh-content-feed-rows {
     display: flex;
@@ -7,54 +7,66 @@
     gap: var(--gap-s);
 }
 
-.gh-content-feed-item-row {
+.gh-content-feed-rows-item {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
     padding-top: .25rem;
     gap: var(--gap-xs);
 }
 
-.gh-content-feed-item-row:first-of-type {
+.gh-content-feed-rows-item:first-of-type {
     padding-top: var(--pad-s);
 }
 
-.gh-content-feed-item-date-row {
-    font: var(--body-sans);
+.gh-content-feed-rows-item-tag-title,
+.gh-content-feed-rows-item-title {
+    overflow: hidden;
     white-space: nowrap;
 }
 
-.gh-content-feed-item-title-row {
-    overflow: hidden;
+.gh-content-feed-rows-item-tag-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.gh-content-feed-rows-item-title {
     text-overflow: ellipsis;
+}
+
+.gh-content-feed-rows-item-date {
+    font: var(--body-sans);
+    text-align: right;
     white-space: nowrap;
 }
 
 /* Column (w/ Tag) */
 
-.gh-content-feed-vstack {
+.gh-content-feed-vstack,
+.gh-content-feed-vstack-item {
     display: flex;
     flex-direction: column;
+}
+
+.gh-content-feed-vstack {
     padding-top: var(--pad-xl) !important;
     gap: var(--gap-xl);
 }
 
-.gh-content-feed-item-vstack {
-    display: flex;
-    flex-direction: column;
+.gh-content-feed-vstack-item {
     gap: var(--gap-xs);
 }
 
-.gh-content-feed-item-date-vstack {
+.gh-content-feed-vstack-item-date {
     font: var(--body-weight) var(--caption-size)/var(--lineheight-05) var(--font-sans);
     color: var(--text-05);
 }
 
-.gh-content-feed-item-title-vstack {
+.gh-content-feed-vstack-item-title {
     font: var(--body-weight) var(--body-size)/var(--lineheight-05) var(--font-sans)
 }
 
-.gh-content-feed-item-tags-vstack {
+.gh-content-feed-vstack-item-tags {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -62,11 +74,16 @@
     padding-top: var(--pad-xs) !important;
 }
 
-.gh-content-feed-item-tag-vstack {
+.gh-content-feed-tag {
     display: flex;
     border: 1px solid var(--gray-10);
     padding: var(--pad-xxs) var(--pad-xs);
     gap: var(--gap-xxs);
     font: var(--body-weight) var(--caption-size)/var(--lineheight-01) var(--body-font-italic);
     color: var(--text-01) !important;
+    text-transform: capitalize;
+}
+
+.gh-content-feed-tag:first-child {
+    margin-right: var(--gap-xs)
 }

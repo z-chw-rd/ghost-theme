@@ -1,14 +1,20 @@
-<article class="gh-content-feed-item-row {{post_class}}">
+<article class="gh-content-feed-rows-item {{post_class}}">
+    <div class="gh-content-feed-rows-item-tag-title">
 
-    {{!--#if tags}}
-        {{#foreach tags}}
-            <a href="{{url}}" class="gh-content-feed-item-tag-vstack">{{name}}</a>
-        {{/foreach}}
-    {{/if--}}
+        {{#if tags}}
 
-    <a class="gh-content-feed-item-title-row" href="{{url}}">{{title}}</a>
+            {{#foreach tags limit="1"}}
+                <a href="{{url}}" class="gh-content-feed-tag">{{name}}</a>
+            {{/foreach}}
 
-    <time class="gh-content-feed-item-date-row" datetime="{{date format="YYYY-MM-DD"}}">
+        {{/if}}
+
+         <a class="gh-content-feed-rows-item-title" href="{{url}}">{{title}}</a>
+
+    </div>
+
+    <time class="gh-content-feed-rows-item-date" datetime="{{date format="YYYY-MM-DD"}}">
         {{date format="MMM YYYY"}}
     </time>
+
 </article>

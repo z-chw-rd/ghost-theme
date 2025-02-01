@@ -11,6 +11,10 @@
     gap: var(--gap-l);
 }
 
+.gh-page-header-intro h1::first-letter {
+    text-transform: capitalize;
+}
+
 .gh-page-header-intro p {
     color: var(--text-02);
 }
