@@ -3,7 +3,7 @@
 
 .gh-head {
     background: inherit;
-    padding-top: var(--pad-l);
+    padding: var(--pad-l) 4vmin 0 4vmin;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
