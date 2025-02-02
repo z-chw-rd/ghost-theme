@@ -9,10 +9,6 @@
             <a href="#/portal/">Get updates</a>
         </header>
 
-        <header class="component-header">
-            <h2>Feed</h2>
-        </header>
-
         <div class="gh-content-feed-rows">
             {{#get "posts" limit="9" order="published_at desc" include="tags"}}
                 {{#foreach posts}}

@@ -5,6 +5,7 @@
     flex-direction: column;
     padding-top: var(--pad-xs);
     gap: var(--gap-s);
+    margin-top: var(--pad-xxxl);
 }
 
 .gh-content-feed-rows-item {

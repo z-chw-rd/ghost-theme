@@ -1,9 +1,8 @@
 .gh-footer {
     background: inherit;
-    padding-top: var(--pad-xxl);
-    padding-bottom: var(--pad-xxxl);
+    padding: 0 4vmin;
     width: 100%;
-    margin: 0 auto;
+    margin: var(--pad-xxxl) auto var(--pad-xxxl) auto;
     box-sizing: border-box;
 }
 
@@ -11,17 +10,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 800px;
+    max-width: 896px;
     margin: 0 auto;
-}
-@media (max-width: 900px) {
-    .gh-footer-inner {
-        padding: 0 4vmin;
-    }
+    border-top: 1px solid var(--ui-04);
 }
 
 .gh-footer-menu {
-    border-top: 1px solid var(--ui-03);
     padding-top: var(--pad-xxl);
 }
 

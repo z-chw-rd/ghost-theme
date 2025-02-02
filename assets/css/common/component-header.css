@@ -5,7 +5,6 @@
     padding-bottom: var(--pad-xs);
     flex-direction: column;
     gap: var(--gap-m);
-    border-top: 1px solid var(--ui-04);
 }
 
 .component-header h2 {
