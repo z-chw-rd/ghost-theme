@@ -54,6 +54,9 @@
 
     --link: #1F1D1A; /* Primary links */
 
+    --accent-01: #d8eee2;
+    --accent-02: #ffe1be;
+
     --icon-01: var(--gray-10); /* Primary icons */
     --icon-02: var(--gray-07); /* Secondary icons */
     --icon-03: var(--white); /* Icons on interactive colors */
