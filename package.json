@@ -76,8 +76,5 @@
             }
         }
     },
-    "type": "module",
-    "dependencies": {
-        "lightgallery": "^2.8.2"
-    }
+    "type": "module"
 }
