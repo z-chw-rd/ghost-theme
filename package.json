@@ -6,7 +6,6 @@
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
-
     "scripts": {
         "dev": "rollup -c --environment BUILD:development -w",
         "build": "rollup -c --environment BUILD:production",
@@ -77,5 +76,8 @@
             }
         }
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "lightgallery": "^2.8.2"
+    }
 }
