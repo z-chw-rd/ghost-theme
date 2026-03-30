@@ -44,8 +44,6 @@ Changes you make to your styles, scripts, and Handlebars files will show up auto
 
 Press `ctrl + c` in the terminal to exit development mode.
 
-&nbsp;
-
 ### Build and test theme
 
 Compile CSS and JavaScript assets for production with the following command:
