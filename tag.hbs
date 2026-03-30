@@ -1,31 +1,23 @@
 {{!< default}}
 <section class="gh-grid">
-
-        {{#tag}}
+    {{#tag}}
         <header class="gh-page-header">
             <div class="gh-page-header-intro">
                 <h1>{{name}}</h1>
             </div>
-
             <p class="body-l">
                 {{#if description}}
                     {{description}}
                 {{/if}}
             </p>
-
             {{#if feature_image}}
                 <img class="gh-page-image" src="{{feature_image}}" alt="{{name}}" />
             {{/if}}
-
         </header>
-        {{/tag}}
-
-        <div class="gh-content-feed-vstack">
-            {{#foreach posts}}
-
-                {{> "content-feed-item-vstack" page=../pagination.page }} {{!-- partials/content-feed-item-row.hbs --}}
-
-            {{/foreach}}
-        </div>
-
+    {{/tag}}
+    <div class="gh-content-feed-vstack">
+        {{#foreach posts}}
+            {{> "content-feed-item-vstack" page=../pagination.page }}
+        {{/foreach}}
+    </div>
 </section>

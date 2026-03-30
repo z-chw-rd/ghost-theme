@@ -1,21 +1,16 @@
 {{!< default}}
 <section class="gh-grid">
-
     <header class="gh-page-header">
         <div class="gh-page-header-intro">
             <h1>Index</h1>
             <p class="body-l">All posts</p>
         </div>
     </header>
-
     <div class="gh-content-feed-vstack">
         {{#get "posts" order="published_at desc"}}
             {{#foreach posts}}
-
-                {{> "content-feed-item-vstack" }} {{!-- partials/content-feed-item.hbs --}}
-
+                {{> "content-feed-item-vstack" }}
             {{/foreach}}
         {{/get}}
     </div>
-
 </section>

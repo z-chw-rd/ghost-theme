@@ -1,22 +1,17 @@
 {{!< default}}
 <section class="gh-grid">
-
-        <header class="gh-page-header">
-            <div class="gh-page-header-intro">
-                <h1>Zach Ward</h1>
-                <p class="body-l">A growing collection of thoughts and a work-in-progress project archive. Thanks for stopping by.</p>
-            </div>
-            <a href="#/portal/">Get updates</a>
-        </header>
-
-        <div class="gh-content-feed-rows">
-            {{#get "posts" limit="9" order="published_at desc" include="tags"}}
-                {{#foreach posts}}
-
-                    {{> "content-feed-item-row" }} {{!-- partials/content-feed-item.hbs --}}
-
-                {{/foreach}}
-            {{/get}}
+    <header class="gh-page-header">
+        <div class="gh-page-header-intro">
+            <h1>Zach Ward</h1>
+            <p class="body-l">A growing collection of thoughts and a work-in-progress project archive. Thanks for stopping by.</p>
         </div>
-
+        <a href="#/portal/">Get updates</a>
+    </header>
+    <div class="gh-content-feed-rows">
+        {{#get "posts" limit="9" order="published_at desc" include="tags"}}
+            {{#foreach posts}}
+                {{> "content-feed-item-row" }}
+            {{/foreach}}
+        {{/get}}
+    </div>
 </section>

@@ -2,17 +2,14 @@
     <time class="gh-content-feed-vstack-item-date" datetime="{{date format="YYYY-MM-DD"}}">
         {{date format="MMM DD YYYY"}}
     </time>
-
     <a class="gh-content-feed-vstack-item-title" href="{{url}}">{{title}}</a>
-
     {{#if tags}}
-    <ul class="gh-content-feed-vstack-item-tags">
-        {{#foreach tags}}
-        <li>
-            <a href="{{url}}" class="gh-content-feed-tag">{{name}}</a>
-        </li>
-        {{/foreach}}
-    </ul>
+        <ul class="gh-content-feed-vstack-item-tags">
+            {{#foreach tags}}
+                <li>
+                    <a href="{{url}}" class="gh-content-feed-tag">{{name}}</a>
+                </li>
+            {{/foreach}}
+        </ul>
     {{/if}}
-
 </article>

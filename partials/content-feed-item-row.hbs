@@ -1,20 +1,13 @@
 <article class="gh-content-feed-rows-item {{post_class}}">
     <div class="gh-content-feed-rows-item-tag-title">
-
         {{#if tags}}
-
             {{#foreach tags limit="1"}}
                 <a href="{{url}}" class="gh-content-feed-tag">{{name}}</a>
             {{/foreach}}
-
         {{/if}}
-
-         <a class="gh-content-feed-rows-item-title" href="{{url}}">{{title}}</a>
-
+        <a class="gh-content-feed-rows-item-title" href="{{url}}">{{title}}</a>
     </div>
-
     <time class="gh-content-feed-rows-item-date" datetime="{{date format="YYYY-MM-DD"}}">
         {{date format="MMM YYYY"}}
     </time>
-
 </article>
