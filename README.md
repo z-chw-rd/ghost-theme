@@ -32,10 +32,6 @@ One neat trick is that you can create custom one-off templates just by adding th
 
 ## Development guide
 
-The Starter theme provides a first-class development experience out of the box. 
-
-&nbsp;
-
 ### Start development mode
 
 From the theme folder, start development mode:
