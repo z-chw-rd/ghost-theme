@@ -63,7 +63,10 @@
         <footer class="gh-post-footer gh-canvas">
 
             <div class="gh-post-authors">
-                Written by {{#foreach authors}}<a href="{{url}}">{{name}}, </a>{{/foreach}}
+                Written by 
+                {{#foreach authors}}<a href="{{url}}">{{name}}</a>
+                    {{#unless @last}}, {{/unless}}
+                {{/foreach}}
             </div>
 
             {{#if tags}}
