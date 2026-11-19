@@ -12,5 +12,5 @@ jobs:
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1
         with:
-          api-url: https://z-a-c-h.com
-          api-key: 679a89a488bde51e771c71de:66bcdbdde3a1bff1277f198cec047bafcf1d557ab55a628e636d8b726de7ab27
+          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
