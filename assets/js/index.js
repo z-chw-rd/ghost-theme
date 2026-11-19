@@ -6,8 +6,10 @@ import "../css/global/index.css";
 // Import JS
 import menuOpen from "./menuOpen";
 import infiniteScroll from "./infiniteScroll";
+import photographyGallery from "./photographyGallery";
 
 
 // Call the menu and infinite scroll functions
 menuOpen();
 infiniteScroll();
+photographyGallery();

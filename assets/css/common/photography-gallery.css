@@ -1,0 +1,159 @@
+.gh-photography {
+    padding: 0 4vmin;
+}
+
+.gh-photography .gh-page-head {
+    padding-bottom: var(--pad-xxl);
+}
+
+.gh-photo-gallery {
+    columns: 3 16rem;
+    column-gap: var(--gap-m);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gh-photo-gallery-item {
+    break-inside: avoid;
+    margin: 0 0 var(--gap-m);
+}
+
+.gh-photo-gallery-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.gh-photo-gallery-trigger img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gh-photo-gallery-trigger:hover img {
+    transform: scale(1.02);
+}
+
+.gh-photo-gallery-trigger:focus-visible,
+.gh-photo-lightbox button:focus-visible {
+    outline: 2px solid var(--interactive-01);
+    outline-offset: 3px;
+}
+
+.gh-photo-gallery-item figcaption {
+    padding: var(--gap-xs) 0 0;
+}
+
+.gh-photo-gallery-item figcaption a {
+    color: inherit;
+}
+
+.gh-photo-gallery-empty {
+    column-span: all;
+    text-align: center;
+}
+
+.gh-content .kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+}
+
+.gh-content .kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--gap-xs);
+}
+
+.gh-content .kg-gallery-image {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.gh-content .kg-gallery-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gh-photo-lightbox {
+    width: min(94vw, 1200px);
+    max-width: none;
+    max-height: 94vh;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    color: white;
+}
+
+.gh-photo-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.gh-photo-lightbox-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--gap-m);
+    max-height: 94vh;
+}
+
+.gh-photo-lightbox-image {
+    grid-column: 2;
+    max-width: 100%;
+    max-height: 82vh;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.gh-photo-lightbox-caption {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.gh-photo-lightbox button {
+    padding: var(--gap-xs);
+    border: 0;
+    background: transparent;
+    color: white;
+    font: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.gh-photo-lightbox-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.gh-photo-lightbox-previous {
+    grid-column: 1;
+}
+
+.gh-photo-lightbox-next {
+    grid-column: 3;
+}
+
+@media (max-width: 600px) {
+    .gh-photo-lightbox-content {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: var(--gap-xs);
+    }
+
+    .gh-photo-lightbox-image {
+        max-height: 76vh;
+    }
+}

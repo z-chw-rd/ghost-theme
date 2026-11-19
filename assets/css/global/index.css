@@ -23,6 +23,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "../common/errors.css";
 @import "../common/pagination.css";
 @import "../common/comments.css";
+@import "../common/photography-gallery.css";
 
 /* Main */
 /* ---------------------------------------------------------- */

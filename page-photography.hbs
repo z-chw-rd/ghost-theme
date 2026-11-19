@@ -1,0 +1,45 @@
+{{!< default}}
+{{#page}}
+    <article class="gh-photography">
+        <header class="gh-page-head">
+            <h1>{{title}}</h1>
+            {{#if custom_excerpt}}
+                <p>{{custom_excerpt}}</p>
+            {{/if}}
+            {{content}}
+        </header>
+
+        <section class="gh-photo-gallery" aria-label="Photography">
+            {{#get "posts" filter="tag:photography" limit="all"}}
+                {{#foreach posts}}
+                    {{#if feature_image}}
+                        <figure class="gh-photo-gallery-item">
+                            <button class="gh-photo-gallery-trigger" type="button"
+                                data-gallery-src="{{feature_image}}"
+                                data-gallery-alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                                data-gallery-caption="{{title}}"
+                                aria-label="View {{title}}">
+                                <img src="{{img_url feature_image size="m"}}"
+                                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                                    loading="lazy">
+                            </button>
+                            <figcaption><a href="{{url}}">{{title}}</a></figcaption>
+                        </figure>
+                    {{/if}}
+                {{else}}
+                    <p class="gh-photo-gallery-empty">No photographs yet.</p>
+                {{/foreach}}
+            {{/get}}
+        </section>
+    </article>
+
+    <dialog class="gh-photo-lightbox" aria-label="Photo viewer">
+        <div class="gh-photo-lightbox-content">
+            <button class="gh-photo-lightbox-close" type="button" aria-label="Close photo viewer">&times;</button>
+            <button class="gh-photo-lightbox-previous" type="button" aria-label="Previous photo">&larr;</button>
+            <img class="gh-photo-lightbox-image" alt="">
+            <button class="gh-photo-lightbox-next" type="button" aria-label="Next photo">&rarr;</button>
+            <p class="gh-photo-lightbox-caption"></p>
+        </div>
+    </dialog>
+{{/page}}
