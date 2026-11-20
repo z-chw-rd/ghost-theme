@@ -15,7 +15,8 @@
         "lint:js": "eslint \"assets/js/**/*.js\" rollup.config.js",
         "lint:css": "stylelint \"assets/css/**/*.css\"",
         "lint:ghost": "npx gscan .",
-        "lint": "npm run lint:js && npm run lint:css && npm run lint:ghost"
+        "lint:hbs": "djlint . --lint",
+        "lint": "npm run lint:js && npm run lint:css && npm run lint:hbs && npm run lint:ghost"
     },
     "author": {
         "name": "Zach Ward",
