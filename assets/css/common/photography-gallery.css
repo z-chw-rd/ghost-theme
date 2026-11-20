@@ -45,14 +45,6 @@
     outline-offset: 3px;
 }
 
-.gh-photo-gallery-item figcaption {
-    padding: var(--gap-xs) 0 0;
-}
-
-.gh-photo-gallery-item figcaption a {
-    color: inherit;
-}
-
 .gh-photo-gallery-empty {
     column-span: all;
     text-align: center;
@@ -120,6 +112,15 @@
     margin: 0;
     text-align: center;
     color: white;
+}
+
+.gh-photo-lightbox-caption a {
+    color: var(--inverse-01);
+}
+
+.gh-photo-lightbox-caption a:focus-visible {
+    outline: 2px solid var(--interactive-01);
+    outline-offset: 3px;
 }
 
 .gh-photo-lightbox button {

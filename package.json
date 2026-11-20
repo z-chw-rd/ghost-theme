@@ -1,7 +1,7 @@
 {
     "name": "clean",
     "description": "My basic theme.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "ghost": ">=5.0.0"
     },

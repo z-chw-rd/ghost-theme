@@ -19,7 +19,10 @@ export default function photographyGallery() {
 
         image.src = trigger.dataset.gallerySrc;
         image.alt = trigger.dataset.galleryAlt;
-        caption.textContent = trigger.dataset.galleryCaption;
+        const captionLink = document.createElement("a");
+        captionLink.href = trigger.dataset.galleryUrl;
+        captionLink.textContent = trigger.dataset.galleryCaption;
+        caption.replaceChildren(captionLink);
         previousButton.disabled = activeIndex === 0;
         nextButton.disabled = activeIndex === triggers.length - 1;
     };
