@@ -2,23 +2,25 @@
 
     /* Font Families */
 
-    --font-sans: Surt-Normal-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
-    --font-serif: SilvanaText-Regular, Times, serif; /* stylelint-disable-line value-keyword-case */
+    --font-sans: Surt-Normal-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    /* stylelint-disable-line value-keyword-case */
+    --font-serif: SilvanaText-Regular, Times, serif;
+    /* stylelint-disable-line value-keyword-case */
 
     --font-header-sans: Surt-Normal-Medium, var(--font-sans);
     --font-header-serif: Silvana-Bold, var(--font-serif);
 
-    --h1-font: Surt-Normal-Semibold, var(--font-serif);
-    --h2-font: Surt-Normal-Semibold, var(--font-serif);
-    --h3-font: Surt-Normal-Bold, var(--font-serif);
-    --h4-font: Surt-Normal-Bold, var(--font-serif);
-    --h5-font: Surt-Normal-UltraBold, var(--font-serif);
-    --h6-font: Surt-Normal-UltraBold, var(--font-serif);
-    --body-font-serif: SilvanaText-Regular, var(--font-serif);
-    --body-font-sans: Surt-Normal-Regular, var(--font-sans);
-    --body-font-sans-bold: Surt-Normal-Bold, var(--font-sans);
-    --body-font-italic: Surt-Normal-Regular-Italic, var(--font-sans);
-    --caption-font: SilvanaText-Regular, var(--font-serif);
+    --h1-font: var(--gh-font-heading, Surt-Normal-Semibold), var(--font-serif);
+    --h2-font: var(--gh-font-heading, Surt-Normal-Semibold), var(--font-serif);
+    --h3-font: var(--gh-font-heading, Surt-Normal-Bold), var(--font-serif);
+    --h4-font: var(--gh-font-heading, Surt-Normal-Bold), var(--font-serif);
+    --h5-font: var(--gh-font-heading, Surt-Normal-UltraBold), var(--font-serif);
+    --h6-font: var(--gh-font-heading, Surt-Normal-UltraBold), var(--font-serif);
+    --body-font-serif: var(--gh-font-body, SilvanaText-Regular), var(--font-serif);
+    --body-font-sans: var(--gh-font-body, Surt-Normal-Regular), var(--font-sans);
+    --body-font-sans-bold: var(--gh-font-body, Surt-Normal-Bold), var(--font-sans);
+    --body-font-italic: var(--gh-font-body, Surt-Normal-Regular-Italic), var(--font-sans);
+    --caption-font: var(--gh-font-body, SilvanaText-Regular), var(--font-serif);
 
 
     /* Sizes */
@@ -83,7 +85,12 @@
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
