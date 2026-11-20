@@ -1,12 +1,11 @@
 :root {
-
     /* Primitives -------------------------- */
 
     /* Colors ------------------ */
 
     /* Basic */
-    --white: #ffffff;
-    --black: #000000;
+    --white: #fff;
+    --black: #000;
 
     /* Grays */
     --gray-01: #fafafa;
@@ -35,7 +34,6 @@
     /* Colors */
 
     --color-primary: var(--ghost-accent-color, #3eb0ef);
-
     --ui-background: #F8F5D7; /* Default page background */
     --interactive-01: var(--red-06); /* Default interactive color */
     --ui-01: var(--gray-02); /* Container background on --ui-background */
@@ -43,7 +41,6 @@
     --ui-03: var(--gray-03); /* Subtle border; tertiary background */
     --ui-04: var(--gray-05); /* Medium contrast border */
     --ui-05: var(--gray-10); /* High contrast border; emphasis elements */
-
     --text-01: #1F1D1A; /* Primary text, body copy, headers, hover text color for text-02 */
     --text-02: #4b4a47; /* Secondary text, input labels */
     --text-03: var(--gray-04); /* Placeholder text */
@@ -51,21 +48,17 @@
     --text-05: #85847F; /* Tertiary text, help text */
     --inverse-01: var(--white); /* inverse text & icon color */
     --inverse-02: var(--gray-08); /* High contrast background; high contrast elements */
-
     --link: #1F1D1A; /* Primary links */
-
     --accent-01: #d8eee2;
     --accent-02: #ffe1be;
-
     --icon-01: var(--gray-10); /* Primary icons */
     --icon-02: var(--gray-07); /* Secondary icons */
     --icon-03: var(--white); /* Icons on interactive colors */
-
     --field-01: var(--gray-02); /* Default input fields; field color on --ui-background */
-
     --success: var(--green-06); /* Success */
 
     /* Sizes */
+
     /* ------------------------------------- */
 
     --height: 4rem;

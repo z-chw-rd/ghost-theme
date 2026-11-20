@@ -24,7 +24,7 @@ async function getNextPage(url) {
         return {posts, nextLink}
 
     } catch (error) {
-        throw new Error(error)
+        throw new Error('Failed to load the next page', { cause: error });
     }
 }
 

@@ -8,6 +8,6 @@
 }
 
 .component-header h2 {
-    font: 600 1.5rem/120% Surt-Normal-Semibold;
+    font: 600 1.5rem/120% Surt-Normal-Semibold, sans-serif;
     color: var(--text-02);
 }

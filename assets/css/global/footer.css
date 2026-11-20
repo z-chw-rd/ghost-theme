@@ -28,7 +28,7 @@
 }
 
 .gh-footer-copyright {
-    font: 400 .75rem/150% Surt-Normal-Regular;
+    font: 400 .75rem/150% Surt-Normal-Regular, sans-serif;
     color: var(--text-05);
     padding-top: var(--pad-xl);
 }

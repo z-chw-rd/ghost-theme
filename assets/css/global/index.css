@@ -5,27 +5,28 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
-@import "header.css";
-@import "vars.css";
-@import "grid.css";
-@import "fonts.css";
-@import "typography.css";
-@import "global.css";
-@import "footer.css";
-@import "../common/buttons.css";
-@import "../common/content-feed.css";
-@import "../common/forms.css";
-@import "../common/page-header.css";
-@import "../common/component-header.css";
-@import "../common/content.css";
-@import "../common/readmore.css";
-@import "../common/members.css";
-@import "../common/errors.css";
-@import "../common/pagination.css";
-@import "../common/comments.css";
-@import "../common/photography-gallery.css";
+@import url("header.css");
+@import url("vars.css");
+@import url("grid.css");
+@import url("fonts.css");
+@import url("typography.css");
+@import url("global.css");
+@import url("footer.css");
+@import url("../common/buttons.css");
+@import url("../common/content-feed.css");
+@import url("../common/forms.css");
+@import url("../common/page-header.css");
+@import url("../common/component-header.css");
+@import url("../common/content.css");
+@import url("../common/readmore.css");
+@import url("../common/members.css");
+@import url("../common/errors.css");
+@import url("../common/pagination.css");
+@import url("../common/comments.css");
+@import url("../common/photography-gallery.css");
 
 /* Main */
+
 /* ---------------------------------------------------------- */
 
 html,
@@ -39,7 +40,8 @@ html,
 .gh-main {
     padding: 0 4vmin;
 }
-@media (max-width: 900px) {
+
+@media (width <= 900px) {
     .gh-main {
         padding: 0 4vmin;
     }
@@ -85,7 +87,7 @@ html,
 }
 
 .gh-page-image {
-    margin: 4vmin 0 0 0;
+    margin: 4vmin 0 0;
 }
 
 .gh-page-head > p {
@@ -97,7 +99,7 @@ html,
     opacity: 0.5;
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .gh-page-head > p {
         font-size: 1.6rem;
     }
@@ -118,7 +120,7 @@ html,
 }
 
 .gh-author-meta {
-    margin: 2vmin 0 0 0;
+    margin: 2vmin 0 0;
     font-size: 1.2em;
 }
 
@@ -135,17 +137,17 @@ html,
     margin: 0 0.75vmin;
 }
 
-.gh-author-links a + a:before {
+.gh-author-links a + a::before {
     display: block;
     content: "";
     margin: 0 1.25vmin 0 0;
     height: 1em;
     width: 1px;
-    background: rgba(0,0,0,0.3);
+    background: rgb(0 0 0 / 30%);
     transform: rotate(20deg);
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .gh-author-meta {
         font-size: 1.6rem;
     }

@@ -86,7 +86,7 @@
 }
 
 .gh-photo-lightbox::backdrop {
-    background: rgba(0, 0, 0, 0.92);
+    background: rgb(0 0 0 / 92%);
 }
 
 .gh-photo-lightbox-content {
@@ -148,7 +148,7 @@
     grid-column: 3;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .gh-photo-lightbox-content {
         grid-template-columns: auto minmax(0, 1fr) auto;
         gap: var(--gap-xs);

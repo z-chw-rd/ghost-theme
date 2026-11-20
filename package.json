@@ -11,7 +11,11 @@
         "build": "rollup -c --environment BUILD:production",
         "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
         "test": "npx gscan .",
-        "pretest": "npm run build"
+        "pretest": "npm run build",
+        "lint:js": "eslint \"assets/js/**/*.js\" rollup.config.js",
+        "lint:css": "stylelint \"assets/css/**/*.css\"",
+        "lint:ghost": "npx gscan .",
+        "lint": "npm run lint:js && npm run lint:css && npm run lint:ghost"
     },
     "author": {
         "name": "Zach Ward",
@@ -37,17 +41,22 @@
     "devDependencies": {
         "@babel/core": "^7.29.0",
         "@babel/preset-env": "^7.29.2",
+        "@eslint/js": "^10.0.1",
         "@rollup/plugin-babel": "^7.0.0",
         "@rollup/plugin-commonjs": "^29.0.2",
         "@rollup/plugin-node-resolve": "^16.0.3",
         "@rollup/plugin-terser": "^1.0.0",
         "bestzip": "^2.2.3",
+        "eslint": "^10.15.0",
+        "globals": "^17.14.0",
         "postcss": "^8.5.8",
         "postcss-import": "^16.1.1",
         "postcss-preset-env": "^11.2.0",
         "rollup": "^4.60.0",
         "rollup-plugin-livereload": "^2.0.5",
-        "rollup-plugin-postcss": "^4.0.2"
+        "rollup-plugin-postcss": "^4.0.2",
+        "stylelint": "^18.1.0",
+        "stylelint-config-standard": "^41.1.0"
     },
     "browserslist": [
         "defaults"

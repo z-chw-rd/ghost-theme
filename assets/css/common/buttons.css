@@ -14,6 +14,9 @@
     white-space: nowrap;
     appearance: none;
     transition: 0.4s ease;
+    color: inherit;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px currentcolor
 }
 
 .gh-button.gh-button-fit {
@@ -38,12 +41,6 @@
 .gh-button:disabled {
     pointer-events: none;
     opacity: 0.4;
-}
-
-.gh-button {
-    color: inherit;
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px currentColor
 }
 
 .gh-button:hover {

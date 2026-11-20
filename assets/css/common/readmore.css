@@ -8,7 +8,7 @@
 
 .gh-readmore-inner {
     display: grid;
-    grid-gap: 8vmin;
+    gap: 8vmin;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -19,7 +19,7 @@
 
 .gh-readmore a {
     display: flex;
-    color: currentColor;
+    color: currentcolor;
     text-decoration: none;
 }
 
@@ -40,10 +40,11 @@
     margin-left: 2vmin;
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .gh-readmore {
         font-size: 1.6rem;
     }
+
     .gh-readmore svg {
         margin: 0.1em 0 0;
     }

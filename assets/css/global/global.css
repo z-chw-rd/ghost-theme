@@ -6,7 +6,7 @@
 }
 
 html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 body {
@@ -41,7 +41,7 @@ img {
 
 input, button, select, textarea {
     font: inherit;
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 fieldset {
@@ -85,9 +85,11 @@ sub, sup {
     line-height: 0;
     vertical-align: baseline;
 }
+
 sup {
     top: -0.5em;
 }
+
 sub {
     bottom: -0.25em;
 }

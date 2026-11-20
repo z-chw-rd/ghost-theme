@@ -1,15 +1,13 @@
 :root {
-
     /* Font Families */
 
-    --font-sans: Surt-Normal-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    --font-sans: surt-normal-regular, -apple-system, blinkmacsystemfont, segoe ui, helvetica, arial, sans-serif;
     /* stylelint-disable-line value-keyword-case */
-    --font-serif: SilvanaText-Regular, Times, serif;
+    --font-serif: silvanatext-regular, times, serif;
     /* stylelint-disable-line value-keyword-case */
 
-    --font-header-sans: Surt-Normal-Medium, var(--font-sans);
-    --font-header-serif: Silvana-Bold, var(--font-serif);
-
+    --font-header-sans: surt-normal-medium, var(--font-sans);
+    --font-header-serif: silvana-bold, var(--font-serif);
     --h1-font: var(--gh-font-heading, Surt-Normal-Semibold), var(--font-serif);
     --h2-font: var(--gh-font-heading, Surt-Normal-Semibold), var(--font-serif);
     --h3-font: var(--gh-font-heading, Surt-Normal-Bold), var(--font-serif);
@@ -71,16 +69,13 @@
     --h4: var(--h4-weight) var(--h4-size)/var(--lineheight-03) var(--h4-font);
     --h5: var(--h5-weight) var(--h5-size)/var(--lineheight-03) var(--h5-font);
     --h6: var(--h6-weight) var(--h6-size)/var(--lineheight-03) var(--h6-font);
-
     --body-l: var(--body-weight) var(--body-l-size)/var(--lineheight-05) var(--body-font-serif);
     --body: var(--body-weight) var(--body-size)/var(--lineheight-05) var(--body-font-serif);
     --body-sans: var(--body-weight) var(--body-size-sans)/var(--lineheight-05) var(--body-font-sans);
     --body-sans-italic: var(--body-weight) var(--body-size-sans)/var(--lineheight-05) var(--body-font-italic);
     --body-sans-bold: var(--body-weight-sans-bold) var(--body-size-sans)/var(--lineheight-05) var(--body-font-sans-bold);
-
     --caption: var(--caption-weight) var(--caption-size)/var(--lineheight-04) var(--caption-font);
-
-    --h2-post: 500 var(--h5-size)/var(--lineheight-03) Silvana-Medium;
+    --h2-post: 500 var(--h5-size)/var(--lineheight-03) silvana-medium;
     --excerpt-post: 400 var(--h5-size)/var(--lineheight-03) var(--font-header-serif);
 
 }
