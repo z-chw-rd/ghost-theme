@@ -47,6 +47,7 @@
         "@rollup/plugin-node-resolve": "^16.0.3",
         "@rollup/plugin-terser": "^1.0.0",
         "bestzip": "^2.2.3",
+        "djlint": "^1.54.0",
         "eslint": "^10.15.0",
         "globals": "^17.14.0",
         "postcss": "^8.5.8",
